@@ -1,7 +1,7 @@
 
 # 描述
 
-shuxiaoyuan/tools 封装了 woaap 的一些常用工具，具体功能如下
+ecrm/tools 封装了 woaap 的一些常用工具，具体功能如下
 
 - 获取中控 ackey
 - 发送公众号模板消息
@@ -9,7 +9,7 @@ shuxiaoyuan/tools 封装了 woaap 的一些常用工具，具体功能如下
 # 安装
 
 ```$xslt
-composer require shuxiaoyuan/tools
+composer require ecrm/tools
 
 使用了 guzzlehttp/guzzle，如果项目没有安装则需要安装
 
@@ -19,7 +19,7 @@ composer require guzzlehttp/guzzle:~6.0
 将服务提供商注册到当前项目（如果使用laravel 5.5+，则不需要）：
 
 ```$xslt
-Shuxiaoyuan\Tools\ToolsServiceProvider::class,
+Ecrm\Tools\ToolsServiceProvider::class,
 ```
 
 发布配置：
@@ -35,7 +35,7 @@ php artisan vendor:publish  // tools_config
 
 使用样例：
 ```text
-use use Shuxiaoyuan\Tools\Controllers\ToolsController;
+use use Ecrm\Tools\Controllers\ToolsController;
 ToolsController::getAckey('param1', 'param2', 'param3');
 ```
 
