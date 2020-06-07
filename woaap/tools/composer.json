@@ -1,0 +1,29 @@
+{
+    "name": "woaap/tools",
+    "description": "Laravel package",
+    "license": "MIT",
+    "type": "library",
+    "require": {
+        "php": ">=7.0",
+        "illuminate/support": "5.*"
+    },
+    "authors": [
+        {
+            "name": "shuxiaoyuan",
+            "email": "sxy@shuxiaoyuan"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Woaap\\Tools\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Woaap\\Tools\\ToolsServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
