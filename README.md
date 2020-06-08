@@ -29,17 +29,17 @@ php artisan vendor:publish  // tools_config
 ```
 
 # 使用说明
-需要在 `config/tools.php` 中填写你的基本配置，接口支持传参覆盖配置
+需要在 `config/tools.php` 中填写你的基本配置，接口支持传参覆盖配置，建议在配置文件 `config/tools.php` 中通过 `.env` 文件获取
 
-注意：支持覆盖配置，若为空，则会抛出异常
+注意：若为空，则会抛出异常
 
 使用样例：
 ```text
-use use Ecrm\Tools\Controllers\ToolsController;
-ToolsController::getAckey('param1', 'param2', 'param3');
+use Ecrm\Tools\Controllers\Woaap;
+Woaap::getAckey('param1', 'param2', 'param3');
 ```
 
-## 获取中控 `getAckey`
+## 获取中控 `Woaap::getAckey`
 
 ```text
     /**
@@ -56,7 +56,7 @@ ToolsController::getAckey('param1', 'param2', 'param3');
 ```
 
 
-## 发送公众号模板消息 `sendTemplateInfo`
+## 发送公众号模板消息 `Woaap::sendTemplateInfo`
 
 ```text
     /**
