@@ -1,6 +1,6 @@
 <?php
 
-namespace Woaap\Tools\Controllers;
+namespace Ecrm\Tools\Controllers;
 
 use App\Http\Controllers\Controller;
 use GuzzleHttp\Client;
@@ -94,7 +94,6 @@ class ToolsController extends Controller {
                 'output' => $data,
             ]);
         }
-
         return $data;
     }
 

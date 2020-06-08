@@ -1,6 +1,6 @@
 <?php
 
-namespace Woaap\Tools;
+namespace Ecrm\Tools;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Routing\Router;
@@ -14,7 +14,7 @@ class ToolsServiceProvider extends ServiceProvider
      */
     public function boot(Router $router)
     {
-        $router->aliasMiddleware('tools', \Woaap\Tools\Middleware\ToolsMiddleware::class);
+        $router->aliasMiddleware('tools', \Ecrm\Tools\Middleware\ToolsMiddleware::class);
 
         $this->publishes([
             __DIR__.'/Config/tools.php' => config_path('tools.php'),
@@ -42,7 +42,7 @@ class ToolsServiceProvider extends ServiceProvider
 
         if ($this->app->runningInConsole()) {
             $this->commands([
-                \Woaap\Tools\Commands\ToolsCommand::class,
+                \Ecrm\Tools\Commands\ToolsCommand::class,
             ]);
         }
     }

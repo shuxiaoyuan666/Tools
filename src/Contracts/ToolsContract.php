@@ -1,6 +1,6 @@
 <?php
 
-namespace Woaap\Tools\Contracts;
+namespace Ecrm\Tools\Contracts;
 
 Interface ToolsContract
 {

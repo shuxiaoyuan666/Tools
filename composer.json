@@ -10,18 +10,18 @@
     "authors": [
         {
             "name": "shuxiaoyuan",
-            "email": "sxy@shuxiaoyuan"
+            "email": "sxy@shuxiaoyuan.com"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Woaap\\Tools\\": "src/"
+            "Ecrm\\Tools\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Woaap\\Tools\\ToolsServiceProvider"
+                "Ecrm\\Tools\\ToolsServiceProvider"
             ]
         }
     },

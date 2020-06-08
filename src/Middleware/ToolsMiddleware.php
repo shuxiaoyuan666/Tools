@@ -1,6 +1,6 @@
 <?php
 
-namespace Woaap\Tools\Middleware;
+namespace Ecrm\Tools\Middleware;
 
 use Auth;
 use Closure;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Woaap\Tools\Commands;
+namespace Ecrm\Tools\Commands;
 
 use Illuminate\Console\Command;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Woaap\Tools\Classes;
+namespace Ecrm\Tools\Classes;
 
-use Woaap\Tools\Contracts\ToolsContract;
+use Ecrm\Tools\Contracts\ToolsContract;
 
 Class ToolsClass implements ToolsContract
 {
